@@ -28,6 +28,13 @@ body {
     margin-bottom: 12px;
 }
 
+.nav-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+}
+
 .nav-link {
     display: inline-block;
     color: #2d5a27;
@@ -41,6 +48,13 @@ body {
     border-radius: 4px;
 }
 
+@media (max-width: 768px) {
+    .nav-container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+    }
+}
 
 .content {
     max-width: 800px;
