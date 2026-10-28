@@ -42,5 +42,38 @@
             referrerpolicy="strict-origin-when-cross-origin"
             allowfullscreen>
         </iframe>
+
+        <section class="form-section">
+            <h2>Wellness Program Inquiry</h2>
+            <p>Have questions about our walking or yoga routines? Send us a message below.</p>
+
+            <form method="post" action="https://miswebapps.uncw.edu/mis310/form-submit.aspx">
+                <label for="full-name">Full name</label>
+                <input type="text" id="full-name" name="fullName" required>
+
+                <label for="user-email">Email Address</label>
+                <input type="email" id="user-email" name="email" required>
+
+                <label for="interest-select">Primary Interest</label>
+                <select id="interest-select" name="interest">
+                    <option value="walking">Walking Routines</option>
+                    <option value="yoga">Yoga Sessions</option>
+                    <option value="both">Both</option>
+                </select>
+
+                <fieldset>
+                    <legend>Preferred Contact Method</legend>
+                    <input type="radio" id="contact-email" name="preferredContact" value="email">
+                    <label for="contact-email">Email</label>
+                    <input type="radio" id="contact-phone" name="preferredContact" value="phone">
+                    <label for="contact-phone">Phone</label>
+                </fieldset>
+
+                <label for="user-message">Your Message</label>
+                <textarea id="user-message" name="message" rows="4" required></textarea>
+
+                <button type="submit">Submit Inquiry</button>
+            </form>
+        </section>
     </body>
 </html>
